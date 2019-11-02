@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"Main","h":"","u":""},{"l":"MyList","h":"","u":""},{"l":"Postgraduate","h":"","u":""},{"l":"Student","h":"","u":""},{"l":"StuList","h":"","u":""},{"l":"Undergraduate","h":"","u":""},{"l":"所有类","h":"","u":"allclasses-index.html"}]

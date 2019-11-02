@@ -1,0 +1,23 @@
+
+package one;
+import java.util.Scanner;
+import java.math.BigInteger;
+public class Big{
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		Scanner read = new Scanner(System.in);
+		
+		BigInteger ans = new BigInteger("176576845689764567897654678654");
+		
+		
+		
+	
+		System.out.println(ans);
+		
+		
+		
+		
+	}
+
+}

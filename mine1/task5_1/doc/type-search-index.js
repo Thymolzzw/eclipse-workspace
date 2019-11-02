@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"Computer","h":"","u":""},{"l":"Main","h":"","u":""},{"l":"Phone","h":"","u":""},{"l":"TV","h":"","u":""},{"l":"UnitPrice","h":"","u":""},{"l":"所有类","h":"","u":"allclasses-index.html"}]

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\eclipse\eclipse-workspace\version2"/>
+		<item value="D:\eclipse\eclipse-workspace\实验1"/>
+		<item value="D:\eclipse\eclipse-workspace\shiyan1"/>
+		<item value="D:\eclipse\eclipse-workspace\mystudents"/>
+		<item value="D:\eclipse\eclipse-workspace\task"/>
+		<item value="D:\eclipse\eclipse-workspace\Operation"/>
+		<item value="D:\eclipse\eclipse-workspace\myTest"/>
+		<item value="D:\eclipse\eclipse-workspace\HelloJava"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\eclipse\eclipse-workspace\HelloJava"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+		</list>
+	</section>
+</section>

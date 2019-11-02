@@ -1,0 +1,27 @@
+
+package one;
+import java.util.Scanner;
+import java.math.BigInteger;
+public class Big{
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		Scanner read = new Scanner(System.in);
+		
+		BigInteger ans = new BigInteger("1");
+		int i=0;
+		while(i<100) {
+			
+			BigInteger shu = read.nextBigInteger();
+			ans=ans.multiply(shu);
+			i++;
+		}
+		System.out.println();
+		System.out.println(ans);
+		
+		
+		
+		
+	}
+
+}

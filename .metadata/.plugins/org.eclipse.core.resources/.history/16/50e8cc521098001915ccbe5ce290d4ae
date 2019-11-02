@@ -1,0 +1,28 @@
+package mytest1;
+
+public class A
+{
+     private int x=10;
+     protected int y=20;
+     public static void main(String[] args) {
+    //	 B b=new B();
+    //	 System.out.println(b instanceof B);
+    //	 String[] str= {"111","222","333"};
+    	 for(int i=100;i<=200;i++) {
+    		 if(i%3==0) {
+    			 System.out.println(i);
+    			 
+    		 }
+    		 
+    	 }
+     }
+}
+
+class B{
+	B(){
+		
+	}
+	B(int n){
+		
+	}
+}

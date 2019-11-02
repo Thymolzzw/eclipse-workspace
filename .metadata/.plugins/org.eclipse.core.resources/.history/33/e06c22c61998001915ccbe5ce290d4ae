@@ -1,0 +1,22 @@
+package mytest1;
+
+public class Example4_5
+{
+   public static void main(String args[])
+   {
+	 Integer x=new Integer(10);
+     Double y=new Double(12.58); 
+     Tom cat=new Tom();
+     cat.f(x,y);
+     System.out.printf("main方法中x和y的值仍然分别是:%d,%3.2f\n",x.intValue(),y.intValue());
+   }
+}
+class Tom
+{  
+  void f(Integer x,Double y)
+   {
+       x=x+1;
+       y=y+1;
+       System.out.printf("参数x和y的值分别是:%d,%3.2f\n",x,y);
+   } 
+}

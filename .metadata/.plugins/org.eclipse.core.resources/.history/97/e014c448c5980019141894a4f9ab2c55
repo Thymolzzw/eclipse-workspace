@@ -1,0 +1,14 @@
+package myTest;
+public class Example8_13
+{
+    public static void main(String args[ ])
+    {
+        JoinThread  a=new JoinThread();
+        
+        a.threadB.start();
+        a.threadA.start();
+   }
+}
+class Daemon implements Runnable{
+	
+}
