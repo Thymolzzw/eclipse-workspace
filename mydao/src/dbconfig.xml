@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<!-- <classname>com.microsoft.sqlserver.jdbc.SQLServerDriver</classname>
+	<url>jdbc:sqlserver://192.168.134.159:1433;databaseName=EDUCATION;user=aaa;password=aaa</url>
+	 -->
+	
+	<classname>com.mysql.jdbc.Driver</classname>
+	<url>jdbc:mysql://192.168.134.157:3306/EDUCATION?user=root&amp;password=root</url>
+  
+</config>

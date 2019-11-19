@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.shop.sso.dao.mapper.UsertableMapper">
+  <resultMap id="BaseResultMap" type="org.shop.sso.dao.entity.Usertable">
+    <id column="userID" jdbcType="INTEGER" property="userid" />
+    <result column="userName" jdbcType="NVARCHAR" property="username" />
+    <result column="password" jdbcType="NVARCHAR" property="password" />
+    <result column="call" jdbcType="CHAR" property="call" />
+    <result column="email" jdbcType="NVARCHAR" property="email" />
+    <result column="microBlog" jdbcType="NVARCHAR" property="microblog" />
+    <result column="weChat" jdbcType="NVARCHAR" property="wechat" />
+    <result column="nickName" jdbcType="NVARCHAR" property="nickname" />
+    <result column="sex" jdbcType="NVARCHAR" property="sex" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    userID, userName, password, call, email, microBlog, weChat, nickName, sex
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from userTable
+    where userID = #{userid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from userTable
+    where userID = #{userid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.shop.sso.dao.entity.Usertable">
+    insert into userTable (userID, userName, password, 
+      call, email, microBlog, 
+      weChat, nickName, sex
+      )
+    values (#{userid,jdbcType=INTEGER}, #{username,jdbcType=NVARCHAR}, #{password,jdbcType=NVARCHAR}, 
+      #{call,jdbcType=CHAR}, #{email,jdbcType=NVARCHAR}, #{microblog,jdbcType=NVARCHAR}, 
+      #{wechat,jdbcType=NVARCHAR}, #{nickname,jdbcType=NVARCHAR}, #{sex,jdbcType=NVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="org.shop.sso.dao.entity.Usertable">
+    insert into userTable
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userid != null">
+        userID,
+      </if>
+      <if test="username != null">
+        userName,
+      </if>
+      <if test="password != null">
+        password,
+      </if>
+      <if test="call != null">
+        call,
+      </if>
+      <if test="email != null">
+        email,
+      </if>
+      <if test="microblog != null">
+        microBlog,
+      </if>
+      <if test="wechat != null">
+        weChat,
+      </if>
+      <if test="nickname != null">
+        nickName,
+      </if>
+      <if test="sex != null">
+        sex,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userid != null">
+        #{userid,jdbcType=INTEGER},
+      </if>
+      <if test="username != null">
+        #{username,jdbcType=NVARCHAR},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=NVARCHAR},
+      </if>
+      <if test="call != null">
+        #{call,jdbcType=CHAR},
+      </if>
+      <if test="email != null">
+        #{email,jdbcType=NVARCHAR},
+      </if>
+      <if test="microblog != null">
+        #{microblog,jdbcType=NVARCHAR},
+      </if>
+      <if test="wechat != null">
+        #{wechat,jdbcType=NVARCHAR},
+      </if>
+      <if test="nickname != null">
+        #{nickname,jdbcType=NVARCHAR},
+      </if>
+      <if test="sex != null">
+        #{sex,jdbcType=NVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="org.shop.sso.dao.entity.Usertable">
+    update userTable
+    <set>
+      <if test="username != null">
+        userName = #{username,jdbcType=NVARCHAR},
+      </if>
+      <if test="password != null">
+        password = #{password,jdbcType=NVARCHAR},
+      </if>
+      <if test="call != null">
+        call = #{call,jdbcType=CHAR},
+      </if>
+      <if test="email != null">
+        email = #{email,jdbcType=NVARCHAR},
+      </if>
+      <if test="microblog != null">
+        microBlog = #{microblog,jdbcType=NVARCHAR},
+      </if>
+      <if test="wechat != null">
+        weChat = #{wechat,jdbcType=NVARCHAR},
+      </if>
+      <if test="nickname != null">
+        nickName = #{nickname,jdbcType=NVARCHAR},
+      </if>
+      <if test="sex != null">
+        sex = #{sex,jdbcType=NVARCHAR},
+      </if>
+    </set>
+    where userID = #{userid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="org.shop.sso.dao.entity.Usertable">
+    update userTable
+    set userName = #{username,jdbcType=NVARCHAR},
+      password = #{password,jdbcType=NVARCHAR},
+      call = #{call,jdbcType=CHAR},
+      email = #{email,jdbcType=NVARCHAR},
+      microBlog = #{microblog,jdbcType=NVARCHAR},
+      weChat = #{wechat,jdbcType=NVARCHAR},
+      nickName = #{nickname,jdbcType=NVARCHAR},
+      sex = #{sex,jdbcType=NVARCHAR}
+    where userID = #{userid,jdbcType=INTEGER}
+  </update>
+</mapper>

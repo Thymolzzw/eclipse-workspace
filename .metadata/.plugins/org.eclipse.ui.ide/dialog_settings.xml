@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="E:\GITHUB\douban07"/>
+		<item value="F:\GITHUB\douban07"/>
+		<item value="I:\GitHub\datebase-douban\DAO\douban07"/>
+		<item value="D:\eclipse\eclipse-workspace\mydao"/>
+		<item value="I:\GitHub\datebase-douban\DAO\douban"/>
+		<item value="D:\文件\database\2016实验\ex3\EducationDAO"/>
 		<item value="D:\eclipse\eclipse-workspace\version2"/>
 		<item value="D:\eclipse\eclipse-workspace\实验1"/>
 		<item value="D:\eclipse\eclipse-workspace\shiyan1"/>

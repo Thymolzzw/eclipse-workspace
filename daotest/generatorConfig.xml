@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >  
+<generatorConfiguration>  
+
+    <!-- <classPathEntry location="D:\rep\mysql\mysql-connector-java\5.1.19\mysql-connector-java-5.1.19.jar" /> -->  
+
+     <classPathEntry location="D:\eclipse\eclipse-workspace\sqljdbc4.jar" />  
+    <context id="DB2Tables" targetRuntime="MyBatis3">  
+
+        <commentGenerator>  
+
+            <property name="suppressAllComments" value="true" />  
+
+            <property name="suppressDate" value="true" />   
+
+        </commentGenerator>  
+
+  
+
+        <jdbcConnection driverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" connectionURL="jdbc:sqlserver://192.168.134.162:1433;databaseName=DoubanDB" userId="aaa" password="aaa" />  
+
+  
+
+        <javaTypeResolver>  
+
+            <property name="forceBigDecimals" value="false" />  
+
+            <!-- 默认false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer true，把JDBC DECIMAL 和 NUMERIC 类型解析为java.math.BigDecimal -->  
+
+        </javaTypeResolver>  
+
+  
+
+        <javaModelGenerator targetPackage="org.shop.sso.dao.entity" targetProject="daotest/src/">  
+
+            <property name="enableSubPackages" value="true" />  
+
+            <property name="trimStrings" value="true" />  
+
+        </javaModelGenerator>  
+
+  
+
+        <sqlMapGenerator targetPackage="org.shop.sso.dao.mapper" targetProject="daotest/src/">  
+
+            <property name="enableSubPackages" value="false" />  
+
+        </sqlMapGenerator>  
+
+        <javaClientGenerator targetPackage="org.shop.sso.dao.mapper" targetProject="daotest/src/" type="XMLMAPPER">  
+
+            <property name="enableSubPackages" value="false" />  
+
+        </javaClientGenerator>  
+
+  
+
+        <table tableName="userTable" enableSelectByExample="false" enableDeleteByExample="false" enableCountByExample="false" selectByExampleQueryId="true" enableUpdateByExample="false">  
+
+            <!-- <generatedKey column="ID" sqlStatement="oracle" identity="true" /> -->  
+
+        </table>  
+
+    </context>  
+
+</generatorConfiguration>  
